@@ -17,9 +17,8 @@
         if($_SERVER["REQUEST_METHOD"] == "POST"){
             if(isset($_POST['tambah'])){
                 $nama = $_POST['nama'];
-                $keterangan = $_POST['keterangan'];
 
-                $q = "INSERT INTO penggajian (`id_karyawan`,`keterangan`) VALUES ('$nama','$keterangan')";
+                $q = "INSERT INTO penggajian (`id_karyawan`) VALUES ('$nama')";
                 $r = mysqli_query($con,$q);
                 alert('success','Berhasil menambahkan data penggajian');
             }
@@ -154,7 +153,6 @@
                                                         echo "<td><a href='detail_gaji.php?id=$row[id_penggajian]' class='btn btn-sm btn-info'>Detail</a></td>";
                                                         echo "</tr>";
                                                         $i++;
-                                                        // <a href='karyawan.php?action=delete&id={$row['id_penggajian']}' class='btn btn-sm btn-danger'>Hapus</a>
                                                     }
                                                 }
                                             ?>
@@ -204,10 +202,6 @@
                                             }
                                     ?>
                                 </select>
-                            </div>
-                            <div class="col-md-12 mb-3">
-                                <label>Keterangan:</label>
-                                <input type="text" name="keterangan" class="form-control" required>
                             </div>
                         </div>
                     </div>

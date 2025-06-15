@@ -3,13 +3,13 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
-  background: #cbcbcb !important;
+  /* background: #cbcbcb !important; */
 }
 .form_container{
   margin-top: 60px;
 }
 .login_text{
-  color: #686D76;
+  color: #f8f9fc;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: bold;
@@ -21,12 +21,11 @@ html {
   width: 500px;
   padding: 30px;
   transform: translate(-50%, -50%);
-  background: #EEEEEE;
+  background: #4e73df;
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0,0,0,.6);
   border-radius: 10px;
 }
-
 .login-box .user-box {
   position: relative;
 }
@@ -35,10 +34,10 @@ html {
   width: 100%;
   padding: 10px 0;
   font-size: 16px;
-  color: rgba(24, 20, 20, 0.987);;
+  color: #f8f9fc;
   margin-bottom: 30px;
   border: none;
-  border-bottom: 1px solid rgba(24, 20, 20, 0.987);;
+  border-bottom: 1px solid #f8f9fc;
   outline: none;
   background: transparent;
 }
@@ -49,7 +48,7 @@ html {
   left: 0;
   padding: 10px 0;
   font-size: 16px;
-  color: rgba(131, 131, 131, 0.987);;
+  color: #f8f9fc;
   pointer-events: none;
   transition: .5s;
 }
@@ -58,7 +57,7 @@ html {
 .login-box .user-box input:valid ~ label {
   top: -20px;
   left: 0;
-  color: rgba(131, 131, 131, 0.987);;
+  color: #f8f9fc;
   font-size: 12px;
 }
 
@@ -66,7 +65,7 @@ html {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
-  color: rgba(0,0,0,.6);
+  color: #f8f9fc;
   font-size: 16px;
   text-decoration: none;
   text-transform: uppercase;
@@ -78,8 +77,8 @@ html {
 }
 
 .login-box button:hover {
-  background: #686D76;
-  color: #EEEEEE;
+  background: #f8f9fc;
+  color: #5a5c69;
   border-radius: 5px;
 }
 
@@ -95,10 +94,4 @@ html {
   50%,100% {
     left: 100%;
   }
-}
-
-.custom-alert{
-  position: fixed;
-  top: 80px;
-  right: 25px;
 }

@@ -92,7 +92,7 @@
                     </div>
                     <form class="offset-md-1">
                         <?php
-                            $q = "SELECT *, (j.gaji_pokok + d.tunjangan) AS total_gaji FROM penggajian p JOIN karyawan k ON p.id_karyawan = k.id_karyawan JOIN jabatan j ON k.id_jabatan = j.id_jabatan JOIN divisi d ON k.id_divisi = d.id_divisi ORDER BY p.tanggal ASC";
+                            $q = "SELECT *, (j.gaji_pokok + d.tunjangan) AS total_gaji FROM penggajian p JOIN karyawan k ON p.id_karyawan = k.id_karyawan JOIN jabatan j ON k.id_jabatan = j.id_jabatan JOIN divisi d ON k.id_divisi = d.id_divisi WHERE p.id_penggajian = '$id_gaji'";
                             $r = mysqli_query($con,$q);
                             $dt = mysqli_fetch_assoc($r);
                             $tanggal = $dt['tanggal'];
