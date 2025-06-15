@@ -23,14 +23,6 @@
                 alert('success','Berhasil menambahkan data penggajian');
             }
         }
-
-        // delete karyawan
-        if (isset($_GET["action"]) && $_GET["action"] == "delete" && isset($_GET["id"])) {
-            $id = $_GET["id"];
-            $q = "DELETE FROM range_gaji WHERE id_range_gaji=$id";
-            $r = mysqli_query($con, $q);
-            alert('success','Data range gaji berhasil dihapus!');
-        }
     ?>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
